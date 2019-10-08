@@ -1,4 +1,4 @@
-
+ 
 //Activate Guess Number Button
 let guessButton = document.getElementById("guess")
 guessButton.addEventListener("click", guess);
@@ -6,7 +6,6 @@ guessButton.addEventListener("click", guess);
 //Get Random Number
 let random = Math.floor((Math.random() * 100) + 1);
 console.log("random number is", random)
-
 
 
 //Function for Empty Input Box
@@ -47,9 +46,12 @@ function guess() {
 
         document.getElementById("alert").setAttribute('class', 'alert alert-danger')
         document.getElementById("alert").innerHTML = "It's bigger than " + guessNumber
+
     } else {
+
         document.getElementById("alert").setAttribute('class', 'alert alert-success')
         document.getElementById("alert").innerHTML = "Good job, you got it! " + guessNumber
+
     }
 
     //EmptyTheInputBox
